@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mas del Avets</title>
+    <link rel="stylesheet" href="css/corregido.css" />
+  </head>
+  <body>
+    <nav id="inicio">
+      <ul class="container">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#habitaciones">Habitaciones</a></li>
+        <li><a href="#restaurante">Restaurante</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1 tabindex="0">Hotel Mas dels Avets</h1>
+      <img src="img/hotel.jpg" alt="Hotel rural rodeado de montañas." tabindex="0"/>
+    </header>
+
+    <main >
+      <section id="seccion_ppal" class="container">
+        <img
+          src="img/dormitori.avif"
+          alt="Dormitorio doble con camas King Size."
+          tabindex="0"
+        />
+        <div id="habitaciones">
+          <h2 tabindex="0">Nuestras habitaciones</h2>
+          <p tabindex="0">Todas nuestras habitaciones disponen de:</p>
+          <ol tabindex="0">
+            <li>Baño privado.</li>
+            <li>TV conectada a satélite.</li>
+            <li>Aire Accondicionado.</li>
+            <li>Caja de seguridad.</li>
+          </ol>
+        </div>
+        <img src="img/menjador.avif" alt="Sala del comedor muy confortable." />
+        <div id="restaurante">
+          <h2>El Restaurante</h2>
+          <p>Ofrecemos menús diarios con productos de temporada.</p>
+          <p>Le recomendamos consulte nuestra excelente carta de vinos.</p>
+          <p>Elaboramos postres artesanos diariamente.</p>
+        </div>
+        <div>
+          <h2>Precauciones en la montaña</h2>
+          <p>
+            Hay una serie de cosas que hay que tener muy en cuenta a la hora de
+            realizar una visita o ruta por la montaña, ya que podrían perjudicar
+            el medio natural e incluso poner en peligro nuestras vidas o las de
+            los que nos rodean.
+          </p>
+
+          <ul class="cosasSI">
+            <li>Respetar la flora y la fauna</li>
+            <li>Mantener limpio el entorno</li>
+            <li>Seguir las indicaciones de las rutas</li>
+            <li>Llevar liquidos para hidratarse</li>
+            <li>Ir con calzado y ropa adecuados</li>
+          </ul>
+
+          <ul class="cosasNO">
+            <li>Hacer hogueras</li>
+            <li>Recoger y consumir plantas</li>
+            <li>Recoger y consumir setas/hongos</li>
+            <li>No depositar residuos en su lugar correspondiente</li>
+            <li>Adentrarse en lugares de dificil acceso</li>
+          </ul>
+        </div>
+        <div>
+          <figure>
+            <img src="img/aconit.jpg" id="aconit" alt="Flor de acónito" />
+            <figcaption>
+              La flor del acónito es muy frecuente en verano. Pero no hay que
+              fiarse: a pesar de su belleza, es muy tóxica.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <section id="seccion_form">
+        <div class="contacto" id="contacto">
+          <h2>Contacte con nosotros</h2>
+          <div>
+            <form class="container form" name="formReserva">
+              <fieldset>
+                <legend>Datos Personales</legend>
+                <label
+                  >Nombre : <input type="text" name="nombre" id="nombre"
+                /></label>
+                <p id="errorNombre"></p>
+                <label
+                  >Apellido : <input type="text" name="apellido" id="apellido"
+                /></label>
+                <p id="errorApellido"></p>
+              </fieldset>
+              <fieldset>
+                <legend>Datos de la reserva</legend>
+                <label
+                  >Fecha entrada : <input type="date" id="fechaEntrada"
+                /></label>
+                <label
+                  >Fecha salida : <input type="date" id="fechaSalida"
+                /></label>
+                <div class="radio">
+                  <label
+                    >Sólo Alojamiento
+                    <input
+                      type="radio"
+                      name="estancia"
+                      value="alojamiento"
+                      checked
+                  /></label>
+                  <label
+                    >Desayuno incluido<input
+                      type="radio"
+                      name="estancia"
+                      value="desayuno"
+                  /></label>
+                </div>
+
+                <button class="boton">Enviar</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+
+      <div class="container">
+        <div id="nosotros">
+        <h2>SOBRE NOSOTROS</h2>
+        <ul>
+          <li><a href="#">¿Quiénes somos?</a></li>
+          <li><a href="#">Blog Hoteles Rurales</a></li>
+          <li><a href="#">Condiciones legales</a></li>
+          <li><a href="#">Política de cookies</a></li>
+        </ul>
+      </div>
+      <div id="app">
+        <h2>DESCARGA LA APP</h2>
+        <ul>
+          <li>
+            <a href="#" aria-label="Enlace a Google Play">
+              <img src="img/google-play2.png" alt="" >
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Enlace a Apple Store">
+              <img src="img/apple-store2.png" alt="" >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="siguenos">
+        <h2>SÍGUENOS</h2>
+
+        <ul>
+          <li>
+            <a href="#" aria-label="Enlace a Facebook">
+              <img src="img/png-transparent-facebook.png" alt="" >
+          </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Enlace a Twitter"></a>
+            <img src="img/png-transparent-twitter.png" alt="">
+          </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Enlace a Instagram">
+              <img src="img/png-transparent-instagram.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      
+    </footer>
+  </body>
+</html>

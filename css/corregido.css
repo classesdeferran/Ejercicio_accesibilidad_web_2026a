@@ -1,0 +1,360 @@
+@font-face {
+  font-family: "Marcellus";
+  src:
+    url("../fonts/Marcellus/Marcellus-Regular.woff2") format("woff2"),
+    url("../fonts/Marcellus/Marcellus-Regular.woff") format("woff"),
+    url("../fonts/Marcellus/Marcellus-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Karla";
+  src:
+    url("../fonts/Karla/Karla-Regular.woff2") format("woff2"),
+    url("../fonts/Karla/Karla-Regular.woff") format("woff"),
+    url("../fonts/Karla/Karla-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+}
+
+:root {
+  --primary-bgColor: #006400;
+  --primary-textColor: white;
+  --secundary-bgColor: #00e800;
+  --secundary-textColor: black;
+  --desktop-width: 1200px;
+  --form-bgColor: gray;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--desktop-width);
+}
+
+nav {
+  background-color: var(--primary-bgColor);
+  padding: 5px;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  li {
+    padding: 5px 10px;
+    color: var(--primary-textColor);
+    &:hover {
+      background-color: var(--secundary-bgColor);
+      color: var(--secundary-textColor);
+      border-radius: 5px;
+    }
+  }
+
+  a {
+    color: inherit;
+    font-size: 1.4rem;
+  }
+}
+
+h1,
+h2 {
+  font-family: "Marcellus";
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header img {
+  width: 100%;
+}
+
+#seccion_ppal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 2rem;
+
+  div {
+    padding: 1rem;
+    margin: 1rem 0;
+
+    p {
+      margin: 0.5rem;
+    }
+
+    ol {
+      margin-left: 2rem;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.cosasSI {
+  color: darkgreen;
+}
+
+.cosasSI li::marker {
+  content: "\2713  ";
+  color: green;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+.cosasNO {
+  color: darkred;
+}
+
+.cosasNO li::marker {
+  content: "\2613  ";
+  color: darkred;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-right: 1rem;
+}
+
+#seccion_form {
+  background-color: var(--form-bgColor);
+  padding: 1rem 0;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  fieldset {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  label {
+    display: block;
+  }
+
+  input {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+
+  button {
+    background-color: var(--primary-bgColor);
+    color: var(--primary-textColor);
+    padding: .5rem;
+
+    &:hover {
+      background-color: var(--secundary-bgColor);
+      color: var(--secundary-textColor);
+    }
+  }
+}
+
+.radio {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+footer {
+  background-color: var(--primary-bgColor);
+  color: var(--primary-textColor);
+}
+
+footer > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+  img {
+
+    width: 30%;
+  }
+
+  a {
+    color: inherit;
+    margin: 1rem 0;
+  }
+}
+
+#siguenos ul {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    margin-top: 1rem;
+  }
+}
+
+#nosotros li {
+  margin: .5rem 0;
+}
+
+/*
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  margin: 1rem 0;
+  font-family: "Love Light", cursive;
+}
+
+.foto-ppal img {
+  width: 100%;
+}
+
+.detalles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+
+  p strong {
+    font-weight: bold;
+    font-size: 2rem;
+    color: burlywood;
+    margin-bottom: 2rem;
+    font-family: "Love Light", cursive;
+  }
+
+  p,
+  div {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+.contacto {
+  background-color: brown;
+
+  p strong {
+    font-weight: bold;
+    font-size: 2rem;
+    color: burlywood;
+    margin: 1.5rem 0;
+    font-family: "Love Light", cursive;
+    text-align: center;
+    display: block;
+  }
+
+  input {
+    font-size: 1.5rem;
+  }
+}
+
+.boton {
+  margin-top: 1rem;
+  padding: 5px 20px;
+  text-align: left;
+  border: 1px solid darksalmon;
+  background-color: darksalmon;
+  display: inline-block;
+  border-radius: 5%;
+
+  &:hover {
+    background-color: salmon;
+    color: bisque;
+  }
+}
+
+.final {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(163, 236, 163);
+  padding: 2rem 5%;
+  color: beige;
+}
+
+#nosotros {
+  font-size: 1.2rem;
+
+  a {
+    font-size: inherit;
+    text-decoration: none;
+    color: beige;
+  }
+}
+
+#app {
+  font-size: 1.2rem;
+  text-align: center;
+  img {
+    width: 40%;
+  }
+}
+
+#siguenos {
+  font-size: 1.2rem;
+  text-align: center;
+
+  div {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+  img {
+    width: 30%;
+  }
+}
+
+#errorNombre,
+#errorApellido {
+  height: 1rem;
+}
+
+.cosasSI {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.cosasNO {
+  color: darkred;
+  font-weight: bold;
+}
+
+#aconit {
+  width: 100%;
+}
+*/
