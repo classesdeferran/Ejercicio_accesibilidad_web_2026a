@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mas del Avets</title>
     <link rel="stylesheet" href="css/corregido.css" />
+    <script src="js/script.js" defer></script>
   </head>
   <body>
+    <a href="#seccion_ppal" id="skip-link">Acceso directo al contenido principal</a>
     <nav id="inicio">
       <ul class="container">
         <li><a href="#inicio">Inicio</a></li>
@@ -36,6 +38,9 @@
             <li>Aire Accondicionado.</li>
             <li>Caja de seguridad.</li>
           </ol>
+          <div class="goHome">
+            <a href="#inicio">Volver al inicio</a>
+          </div>
         </div>
         <img src="img/menjador.avif" alt="Sala del comedor muy confortable." />
         <div id="restaurante">
@@ -43,6 +48,9 @@
           <p>Ofrecemos menús diarios con productos de temporada.</p>
           <p>Le recomendamos consulte nuestra excelente carta de vinos.</p>
           <p>Elaboramos postres artesanos diariamente.</p>
+          <div class="goHome">
+            <a href="#inicio">Volver al inicio</a>
+          </div>
         </div>
         <div>
           <h2>Precauciones en la montaña</h2>
@@ -68,6 +76,9 @@
             <li>No depositar residuos en su lugar correspondiente</li>
             <li>Adentrarse en lugares de dificil acceso</li>
           </ul>
+          <div class="goHome">
+            <a href="#inicio">Volver al inicio</a>
+          </div>
         </div>
         <div>
           <figure>
@@ -87,21 +98,21 @@
               <fieldset>
                 <legend>Datos Personales</legend>
                 <label
-                  >Nombre : <input type="text" name="nombre" id="nombre"
+                  >Nombre (mínimo 2 caracteres, máximo 20 caracteres): <input type="text" name="nombre" id="nombre" required aria-required="true" minlength="2" maxlength="20"
                 /></label>
                 <p id="errorNombre"></p>
                 <label
-                  >Apellido : <input type="text" name="apellido" id="apellido"
+                  >Apellido (mínimo 2 caracteres, máximo 20 caracteres): <input type="text" name="apellido" id="apellido" required aria-required="true" minlength="2" maxlength="40"
                 /></label>
                 <p id="errorApellido"></p>
               </fieldset>
               <fieldset>
                 <legend>Datos de la reserva</legend>
                 <label
-                  >Fecha entrada : <input type="date" id="fechaEntrada"
+                  >Fecha entrada : <input type="date" id="fechaEntrada" name="fechaEntrada"
                 /></label>
                 <label
-                  >Fecha salida : <input type="date" id="fechaSalida"
+                  >Fecha salida : <input type="date" id="fechaSalida" name="fechaSalida"
                 /></label>
                 <div class="radio">
                   <label
@@ -120,7 +131,7 @@
                   /></label>
                 </div>
 
-                <button class="boton">Enviar</button>
+                <button type="submit" class="boton">Enviar</button>
               </fieldset>
             </form>
           </div>
@@ -175,6 +186,9 @@
             </a>
           </li>
         </ul>
+        <div class="goHome">
+            <a href="#inicio">Volver al inicio</a>
+          </div>
       </div>
       </div>
       

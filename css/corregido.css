@@ -37,6 +37,27 @@
   --form-bgColor: gray;
 }
 
+#skip-link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#skip-link:focus {
+left: 2rem;
+  top: 2rem;
+  width: auto;
+  height: auto;
+  background-color:var(--secundary-bgColor) ;
+  color: var(--secundary-textColor);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+
 .container {
   margin: 0 auto;
   max-width: var(--desktop-width);
@@ -145,13 +166,24 @@ header img {
 
 #seccion_form {
   background-color: var(--form-bgColor);
-  padding: 1rem 0;
+  padding: 2rem 0;
 
   h2 {
     text-align: center;
   }
 }
 
+.goHome a {
+  padding: .5rem 1rem;
+}
+.goHome a:hover, 
+.goHome a:focus {
+  background-color: var(--secundary-bgColor);
+  color: var(--secundary-textColor);
+}
+
+
+/* FORMULARIO */
 form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -192,6 +224,8 @@ form {
   margin: 1rem 0;
 }
 
+/* FOOTER */
+
 footer {
   background-color: var(--primary-bgColor);
   color: var(--primary-textColor);
@@ -200,7 +234,7 @@ footer {
 footer > div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
+  padding: 2rem 0;
 
   h2 {
     font-size: 1.2rem;
@@ -233,128 +267,6 @@ footer > div {
   margin: .5rem 0;
 }
 
-/*
-.title {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 900;
-  margin: 1rem 0;
-  font-family: "Love Light", cursive;
-}
-
-.foto-ppal img {
-  width: 100%;
-}
-
-.detalles {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-
-  p strong {
-    font-weight: bold;
-    font-size: 2rem;
-    color: burlywood;
-    margin-bottom: 2rem;
-    font-family: "Love Light", cursive;
-  }
-
-  p,
-  div {
-    padding: 1rem;
-    font-size: 1.5rem;
-  }
-}
-
-.contacto {
-  background-color: brown;
-
-  p strong {
-    font-weight: bold;
-    font-size: 2rem;
-    color: burlywood;
-    margin: 1.5rem 0;
-    font-family: "Love Light", cursive;
-    text-align: center;
-    display: block;
-  }
-
-  input {
-    font-size: 1.5rem;
-  }
-}
-
-.boton {
+#siguenos .goHome {
   margin-top: 1rem;
-  padding: 5px 20px;
-  text-align: left;
-  border: 1px solid darksalmon;
-  background-color: darksalmon;
-  display: inline-block;
-  border-radius: 5%;
-
-  &:hover {
-    background-color: salmon;
-    color: bisque;
-  }
 }
-
-.final {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: rgb(163, 236, 163);
-  padding: 2rem 5%;
-  color: beige;
-}
-
-#nosotros {
-  font-size: 1.2rem;
-
-  a {
-    font-size: inherit;
-    text-decoration: none;
-    color: beige;
-  }
-}
-
-#app {
-  font-size: 1.2rem;
-  text-align: center;
-  img {
-    width: 40%;
-  }
-}
-
-#siguenos {
-  font-size: 1.2rem;
-  text-align: center;
-
-  div {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-  }
-  img {
-    width: 30%;
-  }
-}
-
-#errorNombre,
-#errorApellido {
-  height: 1rem;
-}
-
-.cosasSI {
-  color: darkgreen;
-  font-weight: bold;
-}
-
-.cosasNO {
-  color: darkred;
-  font-weight: bold;
-}
-
-#aconit {
-  width: 100%;
-}
-*/
