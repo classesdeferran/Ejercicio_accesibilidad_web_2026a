@@ -5,6 +5,8 @@ const fechaSalida = document.getElementById("fechaSalida");
 // Obtener los elementos HTML para los mensajes de error
 const errorNombre = document.getElementById("errorNombre");
 const errorApellido = document.getElementById("errorApellido");
+const inputNombre = document.getElementById('nombre')
+const inputApellido = document.getElementById('apellido')
 
 // Obtener la fecha de hoy
 const today = new Date();
@@ -35,14 +37,20 @@ formReserva.addEventListener("submit", (e) => {
 
   let errores = false;
 
-  if (nombre.length < 2) {
-    errorNombre.textContent = "Por favor, mínimo dos caracteres";
-    errores = true;
-  }
   if (apellido.length < 2) {
     errorApellido.textContent = "Por favor, mínimo dos caracteres";
+    inputApellido.value = apellido
+    inputApellido.focus()
     errores = true;
   }
+
+  if (nombre.length < 2) {
+    errorNombre.textContent = "Por favor, mínimo dos caracteres";
+    inputNombre.value = nombre
+    inputNombre.focus()
+    errores = true;
+  }
+
 
   if (errores) {
     alert("Por favor corrija los errores");
